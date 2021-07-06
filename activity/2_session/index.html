@@ -14,15 +14,15 @@
     <div class="container">
         <div class="section">
             <a class="back-button" href="/activity/activity.html">
-                < Back</a> <h1>Actividad 2</h1>
+                < Back</a>
+                    <h1>Actividad 2</h1>
                     <p class="caption">Actividades Sesión Avanzada</p>
                     <hr class="separator">
 
                     <h2 id="ejercicio-1">Ejercicio 1</h2>
                     <ul>
-                        <li>Escribe un programa que tome como entrada un objeto y devuelva una lista con sus
-                            propiedades. Solo puede tener como entrada un objeto y el tipo de vuelta tiene que ser un
-                            array.</li>
+                        <li>Escribe un programa que tome como entrada un objeto y devuelva una lista con sus propiedades. Solo puede tener como entrada un objeto y el tipo de vuelta tiene que ser un array.
+                        </li>
                     </ul>
                     <pre><code class="lang-javascript"><span class="hljs-selector-tag">var</span> <span class="hljs-selector-tag">person</span> {
     <span class="hljs-attribute">name</span>: “Lucas”,
@@ -37,29 +37,25 @@
                     </ul>
                     <h2 id="ejercicio-3">Ejercicio 3</h2>
                     <ul>
-                        <li>Escribe una arrow function (ES6 function) que tome como parámetro una cadena y la devuelva
-                            invertida. Ej &quot;Hola mundo&quot; quedaría &quot;odnum aloH&quot;</li>
+                        <li>Escribe una arrow function (ES6 function) que tome como parámetro una cadena y la devuelva invertida. Ej &quot;Hola mundo&quot; quedaría &quot;odnum aloH&quot;</li>
                     </ul>
                     <h2 id="ejercicio-4">Ejercicio 4</h2>
                     <ul>
                         <li>Crea una clase con el formato ES6. Esta clase va a tener dos atributos, <em>username</em> y
                             <em>password</em> y un método <em>login()</em> que compruebe que username tiene el valor
-                            <strong>admin</strong> y password el valor <strong>passwd</strong> y en caso positivo, lance
-                            una alerta diciendo que el usuario esté logeado, en caso contrario, que diga que el usuario
-                            o la contraseña son incorrectas. Siendo que:</li>
+                            <strong>admin</strong> y password el valor <strong>passwd</strong> y en caso positivo, lance una alerta diciendo que el usuario esté logeado, en caso contrario, que diga que el usuario o la contraseña son incorrectas. Siendo
+                            que:
+                        </li>
                     </ul>
                     <pre><code class="lang-javascript">let login = new Login(“admin”, “passwd”) // alert -&gt; <span class="hljs-keyword">User</span> <span class="hljs-title">logged</span> <span class="hljs-keyword">in</span>
 let logbad = new Login(“pepe”, “bad”) // alert -&gt; <span class="hljs-keyword">User</span> <span class="hljs-title">or</span> passwd incorrect
 </code></pre>
                     <h2 id="ejercicio-5">Ejercicio 5</h2>
-                    <p>En este ejercicio os voy a hacer mirar un poco de documentación extra. Y vamos a utilizar el
-                        fichero que se encuentra en <code>activity/2_session/index.html</code>:</p>
+                    <p>En este ejercicio os voy a hacer mirar un poco de documentación extra. Y vamos a utilizar el fichero que se encuentra en <code>activity/2_session/index.html</code>:</p>
                     <ul>
                         <li>Crea dos <em>clickListener</em>, para los botones con id <strong>loginSuccess</strong> y
-                            <strong>loginFailure</strong>. En el primero crearemos un objeto login que sea correcto y
-                            llamaremos a la función para que de el resultado correcto. En el segundo crearemos un objeto
-                            login con parámetros incorrectos y llamaremos a login para que falle. Para ello consulta los
-                            siguientes documentos.</li>
+                            <strong>loginFailure</strong>. En el primero crearemos un objeto login que sea correcto y llamaremos a la función para que de el resultado correcto. En el segundo crearemos un objeto login con parámetros incorrectos y llamaremos
+                            a login para que falle. Para ello consulta los siguientes documentos.</li>
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">Get DOM
                                 element</a></li>
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">Click
@@ -70,20 +66,15 @@ let logbad = new Login(“pepe”, “bad”) // alert -&gt; <span class="hljs-k
                     <ul>
                         <li>
                             <p>Crea dos <em>clickListener</em>, para los botones con id
-                                <strong>loginSuccessAsync</strong> y <strong>loginFailureAsync</strong>. En el primero
-                                llamaremos a la función <code>loginWitUsername</code> para que de el resultado correcto.
-                                En el segundo llamaremos a la función con parámetros incorrectos. Os dejo un par de
-                                pistas para resolver el ejercicio.</p>
+                                <strong>loginSuccessAsync</strong> y <strong>loginFailureAsync</strong>. En el primero llamaremos a la función <code>loginWitUsername</code> para que de el resultado correcto. En el segundo llamaremos a la función con parámetros
+                                incorrectos. Os dejo un par de pistas para resolver el ejercicio.</p>
                         </li>
                         <li>
-                            <p>Primero, <code>addEventListener(&#39;click&#39;, () =&gt; {})</code> no acepta asincronía
-                                ya que es una <strong>función síncrona</strong>. Pero es posible sustituir el segundo
-                                argumento <code>() =&gt; {}</code> que es una función, por una función asíncrona (solo
-                                habría que añadir una palabra reservada).</p>
+                            <p>Primero, <code>addEventListener(&#39;click&#39;, () =&gt; {})</code> no acepta asincronía ya que es una <strong>función síncrona</strong>. Pero es posible sustituir el segundo argumento <code>() =&gt; {}</code> que es una función,
+                                por una función asíncrona (solo habría que añadir una palabra reservada).</p>
                         </li>
                         <li>
-                            <p><code>loginWithUsername</code> devuelve una promesa, que lanza una excepción si falla,
-                                por lo que <strong>habría que atrapar esa excepción para que nuestro programa no
+                            <p><code>loginWithUsername</code> devuelve una promesa, que lanza una excepción si falla, por lo que <strong>habría que atrapar esa excepción para que nuestro programa no
                                     falle</strong>.</p>
                         </li>
                     </ul>
@@ -109,6 +100,7 @@ let logbad = new Login(“pepe”, “bad”) // alert -&gt; <span class="hljs-k
 
 // Ejercicio 5
 
+
 // Ejercicio 6
 
 let loginWitUsername = (username, password) => {
@@ -129,6 +121,65 @@ let loginWitUsername = (username, password) => {
     <script src="../../prism.js"></script>
     <script src="index.js">
     </script>
+    <script src="ejercicio01.js">
+    </script>
+    <script>
+        function Login(login) {
+            console.log("user", login);
+
+            if (login.user === "admin" && login.password === 123) {
+                alert("Usuario y Password son Correcto");
+            } else {
+                alert("Usuario y Password son Incorrecto");
+            }
+
+        }
+
+        document.getElementById("loginSuccess").addEventListener("click", function() {
+            let login = {
+                user: "admin",
+                password: 123,
+            };
+            Login(login);
+        }, false);
+
+
+        document.getElementById("loginFailure").addEventListener("click", function() {
+            let login = {
+                user: "acc",
+                password: 456,
+            };
+            Login(login);
+        }, false);
+    </script>
+
+    <script>
+        async function loginWithUsername(user, password) {
+
+            let promise = new Promise((resolve, reject) => {
+
+                if (user === "aculquic" && password === 210911) {
+                    resolve("Usuarios Correctos");
+                    console.log(user, password);
+                } else {
+                    reject(new Error("invalido datos de Usuario o Contraseña"));
+                }
+            }).catch(alert);
+
+            let result = await promise;
+            console.log(result);
+
+        };
+
+        document.getElementById("loginSuccessAsync").addEventListener("click", async() => {
+            loginWithUsername("aculquic", 210911);
+        });
+
+        document.getElementById("loginFailureAsync").addEventListener("click", function() {
+            loginWithUsername("andre", 123);
+        });
+    </script>
+
 </body>
 
 </html>
